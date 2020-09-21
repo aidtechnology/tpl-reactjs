@@ -1,0 +1,14 @@
+{
+  "file": [
+    "src/setupTests.js"
+  ],
+  "require": [
+    "@babel/register",
+    "ts-node/register"
+  ],
+  "spec": [
+    "src/**/*.test.js",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ]
+}
