@@ -9,5 +9,5 @@ import chaiEnzyme from "chai-enzyme";
 Enzyme.configure({ adapter: new Adapter() });
 chai.use(chaiEnzyme());
 
-// Create to main application wrapper
+// Create main application wrapper
 document.body.innerHTML = '<div id="app"></div>';

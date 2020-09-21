@@ -6,8 +6,9 @@ help:
 	@echo "Commands available"
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' | sed -e 's/^/ /' | sort
 
-## clean: Remove previous builds
+## clean: Remove previous builds and cache files
 clean:
+	@-rm -rf .cache
 	@-rm -rf dist
 
 ## test: Run all tests excluding vendor dependencies

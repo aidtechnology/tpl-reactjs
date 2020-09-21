@@ -1,6 +1,6 @@
 const presets = [
-  "@babel/preset-react",
-  "@babel/preset-env"
+  "@babel/preset-env",
+  "@babel/preset-react"
 ];
 const plugins = [
   ["babel-plugin-module-resolver", {
