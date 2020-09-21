@@ -9,6 +9,7 @@
   "endOfLine": "lf",
   "vueIndentScriptAndStyle": true,
   "embeddedLanguageFormatting": "auto",
+  "trailingComma": "none",
   "jsxSingleQuote": false,
   "jsxBracketSameLine": true,
   "overrides": []
