@@ -1,13 +1,12 @@
+import * as React from "react";
+import { render } from "@testing-library/react";
 import { expect } from "chai";
-import { shallow } from "enzyme";
-
-// Component
-import React from "react";
-import Label from "~/components/label";
+import Label from "~/components/Label";
 
 describe("Label", () => {
   it("render", () => {
-    const wrapper = shallow(<Label text="hi" />);
-    expect(wrapper.find("pre")).text().equals("hi");
+    const { getByText } = render(<Label text="hi" />);
+    const labelElement = getByText(/hi/i);
+    expect(document.body.contains(labelElement));
   });
 });

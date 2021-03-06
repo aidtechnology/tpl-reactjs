@@ -9,11 +9,11 @@ help:
 ## clean: Remove previous builds and cache files
 clean:
 	@-rm -rf .cache
-	@-rm -rf dist
+	@-rm -rf build
 
 ## test: Run all tests excluding vendor dependencies
 test:
-	npx tsc --noEmit
+	npm run lint
 	npm run test
 
 ## build: Build production version
@@ -22,12 +22,16 @@ build:
 
 ## dev: Run development server
 dev:
-	npm run start
+	npm run dev
+
+## lint: Verify code formatting is correct
+lint:
+	npm run lint
 
 ## format: Ensure code formatting is correct
 format:
 	npm run format
 
-## watch: Watch files for changes and recompile/reload automatically
-watch:
-	npm run watch
+## scan: Scan your project for vulnerabilities and attempt automatic fix
+scan:
+	npm audit fix --only=prod

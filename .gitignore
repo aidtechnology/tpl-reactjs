@@ -1,5 +1,5 @@
 .DS_Store
 .cache
-dist
+.snowpack
+build
 node_modules
-package-lock.json
